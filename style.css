@@ -72,3 +72,32 @@ section .imgtwo{
     transform: translate(-30%,-70%);
 }
 
+main{
+    display: grid;
+    grid-template-columns: 50% 50%; /* แบ่ง columns */
+
+}
+
+main .left{
+    display: grid;
+    grid-template-rows: repeat(5,20%); /*repeat ใช้กรณีซ้ำ ๆ กัน*/
+}
+
+main .left .option{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+main .left .option img{
+    width: 60%;
+    height: 50%;
+}
+
+main .left .option .content{
+    margin-top: 30px;
+}
+
+main .right img{
+    border-radius: 30px;
+}
+
