@@ -13,11 +13,11 @@ nav ul{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    column-gap: 3rem;
 }
 
 nav ul li{
     list-style: none;
-    margin: 10px 20px;
 }
 
 nav li:first-child img{
@@ -72,9 +72,19 @@ section .imgtwo{
     transform: translate(-30%,-70%);
 }
 
+section .imgthree{
+    height: 380px;
+    width: 30vw;
+    border-radius: 30px;
+    object-fit: cover;
+    transform: translate(120%,-250%);
+}
+
 main{
     display: grid;
     grid-template-columns: 50% 50%; /* แบ่ง columns */
+    margin-left: 100px;
+    transform: translate(0%,-90%);
 
 }
 
@@ -99,5 +109,181 @@ main .left .option .content{
 
 main .right img{
     border-radius: 30px;
+    height: 700px;
+    width: 800px;
 }
 
+main .left h1{
+    font-size: 40px;
+}
+
+main .left p{
+    font-size: 20px;
+}
+
+.properties {
+    margin-top: 200px;
+    margin-left: 100px;
+    transform: translate(0%,-150%);
+}
+
+.properties h1 {
+    margin-bottom: 50px;
+}
+
+.properties .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.properties .card {
+    display: flex;
+    background-color: rgb(241, 237, 237);
+    height: 300px;
+    width: 80%;
+    border-radius: 3%;
+}
+
+.properties .card img {
+    width: 50%;
+}
+
+.properties .card .option {
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+}
+
+.properties .card .option h1 {
+    height: fit-content;
+    font-size: 100%;
+    margin: 30px;
+}
+
+.properties .card .option div {
+    display: flex;
+    align-items: center;
+}
+
+.properties .card .option div p {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.properties .card .option div img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20%;
+}
+
+.customers {
+    margin-top: 200px;
+    transform: translate(0%,-80%);
+}
+.customers h1 {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.customers .cards{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.customers .cards .left img{
+    width: 50%;
+    border-radius: 5%;
+    margin-left: 100px;
+
+}
+.customers .cards .right {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.news {
+    margin-top: 200px;
+    transform: translate(0%,-160%);
+}
+.news h1 {
+    margin-left: 100px;
+}
+.news .cards {
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.news .cards .card img{
+    width: 80%;
+    border-radius: 5%;
+    height: 270px;
+}
+.news .cards .card .content {
+    border-radius: 5%;
+    background-color: white;
+    transform: translate(5%, -70%);
+    width: 80%;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.news .cards .card .content .head {
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer {
+    margin-top: 200px;
+    background-color: #29554a;
+    color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: translate(0%,-140%);
+}
+footer header {
+    display:  flex;
+    justify-content: space-between;
+}
+footer header h1 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+footer header button {
+    margin-top: 100px;
+    margin-right: 100px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px;
+    color: #29554a;
+}
+
+footer .content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+footer .content ul {
+    width: 80%;
+    margin-left: 100px;
+}
+footer .content li {
+    margin-top: 20px;
+}
+footer .content ul li:first-child{
+    font-size: 20px;
+}
+footer .copyright{
+    margin-top: 50px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+footer .copyright img{
+    width: 100px;
+    border-radius: 100%;
+
+}
